@@ -208,6 +208,7 @@ $ python song_gen.py "{Artist Name}" "{New Song Name}" "{f|m}"
 This will generate the new song in .txt file in `./new_songs/` and create a .mp3 for the song in `./song_files/`.
 
 ## TODOs:
+* Host all this on a website
 * Train models on sentiment-analyzed lyrics to generate happier/angstier lyrics
 * Generate song title from most frequent words
 * Add background music/"sing"-ify the mp3's
