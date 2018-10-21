@@ -6,6 +6,8 @@ Hackathon project for BigRedHacks 2018. Resources and tools used: [Song Lyrics (
 
 <details>
   <summary>Taylor Swift</summary><p>
+  
+   The TSwift AI learned from 81 songs.
  
     Look at you now, you're the only thing I know since yesterday is everything has changed
     Now in this hospital
@@ -43,6 +45,8 @@ Hackathon project for BigRedHacks 2018. Resources and tools used: [Song Lyrics (
 <details>
   <summary>Fall Out Boy</summary><p>
   
+  The Fall Out Boy AI learned from 97 songs.
+  
     This is what we don't have to prove it to me
     I can't sleep in the wishing well
     Well I'll look at me
@@ -76,6 +80,48 @@ Hackathon project for BigRedHacks 2018. Resources and tools used: [Song Lyrics (
   
 </p></details>
 
+<details>
+  <summary>One Direction</summary><p>
+  
+  The 1D AI learned from 98 songs.
+    
+    Tight dress with the freckles on your own
+    What a feeling to be like them
+    You want to be right here in it's cage
+    I can feel the same thing
+    She's the one that's in command
+    Waiting for my fantasy to crash and burn in it all yeah, who could've planned it?
+
+    Nothing you can take it
+    I'm half a blue sky
+    I'll take you there, take you there, yeah I know they'll be coming to find you but I figured out from the playground
+    Cause I wanna do
+    So tell me what you do is say that I won't hesitate no more, no more
+
+    And giving back is all you do
+    Driving to your feet
+    Baby let me go, don't let me kiss you once now I can't hold you down,
+    Everybody wanna take it to be a good night
+    Baby you light up every second of the things I want
+
+    It's so right you know you wanna cry or fall apart
+    Open up your almost done
+    Same old shh but we never say never,
+    But I'm not scared of love hate
+    All I ever wanted was the best but expecting the worst,
+
+    Don't make me strong?
+    Hey, I don't wanna take you and say it all
+    Need to take it slow
+    We built it up Go
+    We did that when I saw your face
+
+    Remember the day that we been through
+    To get me out
+    At the end of the verses, well, they've got me lifted off my feet
+    Baby let me kiss you once now I can't give up
+ </p></details>
+
 ## How to use:
 Download the project and open a command line/terminal. To create the AI for an artist, type:
 ```bash
@@ -87,6 +133,12 @@ To generate new song lyrics and .mp3 file, decide whether the voice should be `"
 $ python song_gen.py "{Artist Name}" "{New Song Name}" "f"
 ```
 This will generate the new song in .txt file in `./new_songs/` and create a .mp3 for the song in `./song_files/`.
+
+## TODOs:
+* Generate song title from most frequent words
+* Add background music/"sing"-ify the mp3's
+* Play the mp3's
+
 
 
 
