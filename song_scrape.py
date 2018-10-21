@@ -22,8 +22,11 @@ df = pandas.read_csv("./songlyrics/songdata.csv", encoding = 'unicode_escape')
 f_name = './artists/'+artist+'.txt'
 try: #artist
     artist_df = df[df['artist'] == artist]
-    print("Artist found")
+    if artist_df.empty == True:
+        raise ArtistNotFound
     lyrics = artist_df['text']
+    num_songs = len(lyrics)
+    print("Artist found, "+repr(num_songs)+" songs")
     all_lyr = lyrics.str.cat(sep="\n")
     all_lyr.strip(string.punctuation)
     fn = open(f_name,'w')
@@ -32,6 +35,8 @@ try: #artist
     print("Lyrics compiled")
 except:
     print('Artist not found')
+    exit()
+
 
 # Get raw text as string.
 with open(f_name) as f:

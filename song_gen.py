@@ -5,14 +5,21 @@ import random
 from watson_developer_cloud import TextToSpeechV1
 from watson_developer_cloud import WatsonApiException
 
-
-artist = str(sys.argv[1])
-song_name = str(sys.argv[2])
-gender = str(sys.argv[3])
+try:
+    artist = str(sys.argv[1])
+    song_name = str(sys.argv[2])
+    gender = str(sys.argv[3])
+except:
+    print("Not enough args")
+    exit()
 
 m_file = './models/'+artist+'.json'
-with open(m_file) as f:
-    json_file = json.load(f)
+try:
+    with open(m_file) as f:
+        json_file = json.load(f)
+except:
+    print("File not found")
+    exit()
 
 text_model = markovify.Text.from_json(json_file)
 
@@ -20,7 +27,7 @@ text_model = markovify.Text.from_json(json_file)
 num_lines = random.choice([20,25,30])
 new_song = ''
 for i in range(num_lines):
-    new_song += (text_model.make_short_sentence(140) + '\n')
+    new_song += (text_model.make_short_sentence(100) + '\n')
     if(i !=0 and i % 5 == 0):
         new_song+='\n'
 
