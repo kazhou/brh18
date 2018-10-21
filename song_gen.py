@@ -1,5 +1,5 @@
 '''
-Generate new song lyrics and mp3 file for the song
+Generate new song lyrics and mp3 file for the new song
 '''
 import sys
 import markovify
@@ -16,6 +16,7 @@ except:
     print("Not enough args")
     exit()
 
+# Import model for artist
 m_file = './models/'+artist+'.json'
 try:
     with open(m_file) as f:
@@ -44,8 +45,8 @@ new_f.close()
 
 #text to speech!
 text_to_speech = TextToSpeechV1(
-    username='3fe8faa7-2f2f-4532-be16-7ab6cdaab1d8',
-    password='4ZXb4LqniSxN',
+    username='{username}',
+    password='{password}',
     url='https://stream.watsonplatform.net/text-to-speech/api'
 )
 
@@ -62,5 +63,3 @@ with open(s_name, 'wb') as audio_file:
             'audio/mp3',
             voice
         ).get_result().content)
-
-# TODO: incorporate background music library
