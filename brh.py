@@ -4,21 +4,30 @@ import string
 import re
 import csv
 from textblob import TextBlob
+import markovify
 
 df = pandas.read_csv("taylor_swift_lyrics.csv", encoding = 'unicode_escape')
 print(df)
 
 print(df['track_title'].nunique()) #94 songs
+titles = df['track_title'].unique()
 
 #track name | lyrics
+all_songs={}#{title:TextBlob of lyrics}
+pos_songs={}#[None]*len(titles)
+neg_songs={}
 
 total_pos = 0
 total_neg = 0
 # write all songs to their own files,
-titles = df['track_title'].unique()
+
+all_file = './tswift_songs/input.txt'
+pos_file = './tswift_songs/positive.txt'
+neg_file = './tswift_songs/negative.txt'
 for song_index in range(len(titles)):
     song = titles[song_index]
     song = re.sub(r'[^\w\s]','',song) #remove
+    # song.strip(string.punctuation)
 
     f_name = './tswift_songs/' + song +'.txt'
     print(f_name)
@@ -30,16 +39,22 @@ for song_index in range(len(titles)):
     #     lyric_rows[i] = re.sub(r'[^\"]',"'",lyric_rows[i]) #replace quotes
 
     # #replace this
-    # lyric_rows = lyric_rows.to_frame()
-    # lyric_rows.to_csv(f_name, header=None, index=None, sep=' ',
+    lyric_frame = lyric_rows.to_frame()
+    #appends to all_file
+    # lyric_frame.to_csv(all_file, header=None, index=None, sep=' ',
     #  mode='a',encoding = 'utf_8') #quoting = csv.QUOTE_NONE
 
-    #collapse strings into one strings
+    # collapse strings into one strings
     # Series
     lines = lyric_rows.str.cat(sep='. ')
-
+    markov_lines = lyric_rows.str.cat(sep='\n') #for markovify
+    markov_lines.strip(string.punctuation)
+    #
     # sentiment analyze each song
     blob = TextBlob(lines)
+
+    all_songs[song] = blob
+
     feels = [w.sentiment for w in blob.sentences]
     filt = list(filter(lambda x: x.sentiment[0]!=0, blob.sentences))
     pos = len(list(filter(lambda x: x.sentiment[0]>0, filt)))
@@ -56,20 +71,63 @@ for song_index in range(len(titles)):
     if (feels_score > 0):
         #add to pos set
         total_pos += 1
+        pos_songs[song] = blob
+        # file = open(pos_file,"a",encoding="utf-8")
+        # file.write(markov_lines)
+        # file.close()
     elif (feels_score < 0):
         #add to neg set
         total_neg += 1
+        neg_songs[song] = blob
+        # file = open(neg_file,"a",encoding="utf-8")
+        # file.write(markov_lines)
+        # file.close()
 
 #songs summary
-print(total_pos, total_neg) #65,29
+# print(total_pos, total_neg) #65,29
+
+# print(all_file)
 
 # markov model?
+# https://github.com/jsvine/markovify
+# https://medium.com/ymedialabs-innovation/next-word-prediction-using-markov-model-570fc0475f96
+# https://github.com/ashwinmj/word-prediction/blob/master/MarkovModel.ipynb
+
+# Get raw text as string.
+with open(all_file) as f:
+    text = f.read()
+
+# Build the model.
+text_model = markovify.NewlineText(text)
+
+# Print three randomly-generated sentences of no more than 140 characters
+for i in range(20):
+    print(text_model.make_short_sentence(140))
 
 
 # train model on positive songs
+with open(pos_file) as p:
+    pos_text = p.read()
+
+# Build the model.
+pos_model = markovify.NewlineText(pos_text)
+
+# Print three randomly-generated sentences of no more than 140 characters
+for i in range(20):
+    print(pos_model.make_short_sentence(140))
+
 
 
 # train another model on negative songs
+with open(neg_file) as n:
+    neg_text = n.read()
+
+# Build the model.
+neg_model = markovify.NewlineText(neg_text)
+
+# Print three randomly-generated sentences of no more than 140 characters
+for i in range(20):
+    print(neg_model.make_short_sentence(140))
 
 
 # write pos and neg songs!
