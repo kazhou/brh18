@@ -81,45 +81,40 @@ Hackathon project for BigRedHacks 2018. Resources and tools used: [Song Lyrics (
 </p></details>
 
 <details>
-  <summary>One Direction</summary><p>
+  <summary>Ariana Grande</summary><p>
   
-  The 1D AI learned from 98 songs.
+  The Ariana AI learned from 51 songs.
     
-    Tight dress with the freckles on your own
-    What a feeling to be like them
-    You want to be right here in it's cage
-    I can feel the same thing
-    She's the one that's in command
-    Waiting for my fantasy to crash and burn in it all yeah, who could've planned it?
+    So why do I try to run but I can give it to me.
+    Is it lust? Is it true that the more they take?
+    And you decided not to make that turn
+    You got it, you got me open
+    It's what you don't get whatcha wanted
+    You got me like ooh
 
-    Nothing you can take it
-    I'm half a blue sky
-    I'll take you there, take you there, yeah I know they'll be coming to find you but I figured out from the playground
-    Cause I wanna do
-    So tell me what you do is say that I won't hesitate no more, no more
+    I'm over here doing what I came alive
+    Simple interaction is all I want
+    If we give a wink
+    Makes you wanna go
+    And I need to live and what to be told
 
-    And giving back is all you do
-    Driving to your feet
-    Baby let me go, don't let me kiss you once now I can't hold you down,
-    Everybody wanna take it to be a good night
-    Baby you light up every second of the things I want
+    I can't help it I'm just physically obsessed
+    But that's alright because I love too hard
+    Then they try to tell you how I know I'm not your only one and only
+    And I don't have to have you
+    You drive me crazy?
 
-    It's so right you know you wanna cry or fall apart
-    Open up your almost done
-    Same old shh but we never say never,
-    But I'm not scared of love hate
-    All I ever wanted was the best but expecting the worst,
+    Just give me all them kisses
+    And you decided not to make him stay
+    La, la, la, la, la, la, la, la, la, la
+    I should have been forever but we love the game
+    We should have told me, boy
 
-    Don't make me strong?
-    Hey, I don't wanna take you and say it all
-    Need to take it slow
-    We built it up Go
-    We did that when I saw your face
+    So tonight I'm gonna loose ?
+    But every time I was dreaming bigger than I ever had cause what
+    But that's alright because I love you whoa
+    But it's hard to believe we'll find a light inside our universe now
 
-    Remember the day that we been through
-    To get me out
-    At the end of the verses, well, they've got me lifted off my feet
-    Baby let me kiss you once now I can't give up
  </p></details>
 
 ## How to use:
