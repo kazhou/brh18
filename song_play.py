@@ -1,3 +1,6 @@
+'''
+Incomplete but would ideally play the mp3 files that were generated
+'''
 import sys
 from pygame import mixer
 

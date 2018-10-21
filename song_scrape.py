@@ -1,3 +1,8 @@
+'''
+Retrieve all lyrics from available songs for a given artist and train a
+Markov model to be able to generate new lyrics
+'''
+
 import sys
 import pandas
 import string
@@ -14,10 +19,6 @@ df = pandas.read_csv("./songlyrics/songdata.csv", encoding = 'unicode_escape')
 # len(df['artist'].unique()) #643
 # print(df.columns) #['artist', 'song', 'link', 'text']
 # print(df['artist'].unique())
-#'ABBA', 'Ariana Grande', 'Celine Dion', 'Fall Out Boy', 'Twenty One Pilots',
-# 'One Direction', 'High School Musical', 'Lady Gaga', 'Justin Bieber',
-#'Justin Timberlake', 'Kanye West', 'Kari Jobe',
-#       'Kate Bush', 'Katy Perry'
 
 f_name = './artists/'+artist+'.txt'
 try: #artist

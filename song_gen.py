@@ -1,3 +1,6 @@
+'''
+Generate new song lyrics and mp3 file for the song
+'''
 import sys
 import markovify
 import json
