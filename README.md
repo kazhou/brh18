@@ -83,7 +83,7 @@ Hackathon project for BigRedHacks 2018. Resources and tools used: [Song Lyrics (
 <details>
   <summary>Ariana Grande</summary><p>
   
-  The Ariana AI learned from 51 songs. <audio src="./mp3_files/Ariana Grande_1.mp3" controls preload></audio>
+  The Ariana AI learned from 51 songs. 
     
     So why do I try to run but I can give it to me.
     Is it lust? Is it true that the more they take?
