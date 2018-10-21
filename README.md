@@ -7,7 +7,7 @@ Hackathon project for BigRedHacks 2018. Resources and tools used: [Song Lyrics (
 <details>
   <summary>Taylor Swift</summary><p>
   
-   The TSwift AI learned from 81 songs.
+   The TSwift AI learned from 81 songs. 
  
     Look at you now, you're the only thing I know since yesterday is everything has changed
     Now in this hospital
@@ -45,7 +45,7 @@ Hackathon project for BigRedHacks 2018. Resources and tools used: [Song Lyrics (
 <details>
   <summary>Fall Out Boy</summary><p>
   
-  The Fall Out Boy AI learned from 97 songs.
+  The Fall Out Boy AI learned from 97 songs. 
   
     This is what we don't have to prove it to me
     I can't sleep in the wishing well
@@ -83,7 +83,7 @@ Hackathon project for BigRedHacks 2018. Resources and tools used: [Song Lyrics (
 <details>
   <summary>Ariana Grande</summary><p>
   
-  The Ariana AI learned from 51 songs.
+  The Ariana AI learned from 51 songs. <audio src="./mp3_files/Ariana Grande_1.mp3" controls preload></audio>
     
     So why do I try to run but I can give it to me.
     Is it lust? Is it true that the more they take?
