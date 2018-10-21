@@ -9,35 +9,29 @@ Hackathon project for BigRedHacks 2018. Resources and tools used: [Song Lyrics (
   
    The TSwift AI learned from 81 songs. 
  
-    Look at you now, you're the only thing I know since yesterday is everything has changed
-    Now in this hospital
-    But you were still here
-    I can't keep my distance but you tore her apart
-    Saying, this is a video I found
-    And then the cold hard ground
-    
-    Comes out just when you were dice
-    On the car I keep my focus,
-    You would before you went and let me drive
-    And then you feel this magic in the room,
-    But you are is not the same old bitter things
-    
-    Would never be worlds apart
-    I think that it's best if we just keep dancing like we're 22 uh uh uh ah ah
-    Man, I didn't kiss her, and I can put this down
-    You, have knocked me off my Christmas tree
-    I feel you forget everything?
-    
-    The jokes, the jokes on me now
-    But I think about is how it ought to be messed with?
-    Don't you think happiness
-    I've been going back over, things we both stay
-    On all my rules to see through the crowd
-    
-    It was enchanting to meet you when you're here and it rains in your eyes into mine
-    When we're on the ground
-    But I didn't kiss her, and I can't help but wish I could make it out somehow
-    Seems like there's nothing else I could feel that much
+    You made a rebel of a white dress
+    And you flashback to when he says he will
+    I thought you'd be here by now
+    And down here from the crowds went wild
+    Wake up and sent it
+    If I was too young
+
+    The battle's in your life you'll do things
+    That's when you were mine
+    Think of my life with you I'd dance
+    Why, tell me what more do I get so confused and frustrated
+    You belong with me too
+
+    The other on my make-up,
+    I don't wanna miss you but I don't know what you don't take some other girl
+    The jokes on the floor
+    And we're not speaking and I'm cursing your name
+    Trying to make me crazier crazier crazier crazier crazier crazier oh
+
+    On our last kiss
+    Every night from the crowds
+    You've got a busy day today I have to
+    Can't you see the light
 
   
  </p></details>
