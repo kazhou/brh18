@@ -1,6 +1,6 @@
 # MusicAI (BigRedHacks 2018) 
-:music: Create an AI for any of 600+ artists and automatically generate song lyrics AND a spoken .wav file for them! :music:
-Hackathon project for BigRedHacks 2018. Tools used: [Markovify](https://github.com/jsvine/markovify), [Watson Text-To-Speech API](https://console.bluemix.net/catalog/services/text-to-speech)
+Create an AI for any of 600+ artists and automatically generate song lyrics AND a ~~spoken~~ .wav file for them! 
+Hackathon project for BigRedHacks 2018. Resources and tools used: [Song Lyrics (Kaggle)](https://www.kaggle.com/mousehead/songlyrics), [Markovify](https://github.com/jsvine/markovify), [Watson Text-To-Speech API](https://console.bluemix.net/catalog/services/text-to-speech)
 
 ## Examples:
 
