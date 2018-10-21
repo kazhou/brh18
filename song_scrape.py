@@ -22,6 +22,7 @@ df = pandas.read_csv("./songlyrics/songdata.csv", encoding = 'unicode_escape')
 f_name = './artists/'+artist+'.txt'
 try: #artist
     artist_df = df[df['artist'] == artist]
+    print("Artist found")
     lyrics = artist_df['text']
     all_lyr = lyrics.str.cat(sep="\n")
     all_lyr.strip(string.punctuation)

@@ -5,6 +5,7 @@ import random
 from watson_developer_cloud import TextToSpeechV1
 from watson_developer_cloud import WatsonApiException
 
+
 artist = str(sys.argv[1])
 song_name = str(sys.argv[2])
 gender = str(sys.argv[3])
@@ -26,7 +27,7 @@ for i in range(num_lines):
 # TODO: most frequent word is title
 print(new_song)
 
-f_name = './new_songs/'+artist+'_'+song_name+'.txt'
+f_name = './new_lyrics/'+artist+'_'+song_name+'.txt'
 new_f = open(f_name, 'w')
 new_f.write(new_song)
 new_f.close()
@@ -43,12 +44,12 @@ if gender == 'f':
 else:
     voice = 'en-US_MichaelVoice'
 
-s_name = './song_files/'+artist+'_'+song_name+'.wav'
+s_name = './mp3_files/'+artist+'_'+song_name+'.mp3'
 with open(s_name, 'wb') as audio_file:
     audio_file.write(
         text_to_speech.synthesize(
             new_song,
-            'audio/wav',
+            'audio/mp3',
             voice
         ).get_result().content)
 
