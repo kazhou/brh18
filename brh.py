@@ -12,6 +12,8 @@ print(df['track_title'].nunique()) #94 songs
 
 #track name | lyrics
 
+total_pos = 0
+total_neg = 0
 # write all songs to their own files,
 titles = df['track_title'].unique()
 for song_index in range(len(titles)):
@@ -46,24 +48,22 @@ for song_index in range(len(titles)):
     #weighted avg of polarity and subjectivity
 
     #boost differences
-    if (pos > neg):
-        feels_score = feels_score * (pos/neg)
-    elif (neg < pos):
-        feels_score = feels_score * (neg/pos)
+    # if (pos > neg):
+    #     feels_score = feels_score * ((pos+pos)/(pos+neg))
+    # elif (neg < pos):
+    #     feels_score = feels_score * ((neg+neg)/(pos+neg))
 
     if (feels_score > 0):
         #add to pos set
+        total_pos += 1
     elif (feels_score < 0):
         #add to neg set
+        total_neg += 1
 
+#songs summary
+print(total_pos, total_neg) #65,29
 
-
-
-
-
-
-
-
+# markov model?
 
 
 # train model on positive songs
