@@ -1,6 +1,6 @@
 # MusicAI (BigRedHacks 2018) 
 Create an AI for any of 600+ artists and automatically generate song lyrics AND a ~~spoken~~ .mp3 file for them! 
-Hackathon project for BigRedHacks 2018. Resources and tools used: [Song Lyrics (Kaggle)](https://www.kaggle.com/mousehead/songlyrics),  [pandas](https://pandas.pydata.org/pandas-docs/version/0.18/index.html), [Markovify](https://github.com/jsvine/markovify), [Watson Text-To-Speech API](https://console.bluemix.net/catalog/services/text-to-speech)
+Hackathon project for BigRedHacks 2018. Resources and tools used: [Song Lyrics (Kaggle)](https://www.kaggle.com/mousehead/songlyrics),  [pandas](https://pandas.pydata.org/pandas-docs/version/0.18/index.html), [Markovify](https://github.com/jsvine/markovify), [Watson Text-To-Speech API](https://console.bluemix.net/catalog/services/text-to-speech), [TextBlob](https://textblob.readthedocs.io/en/dev/)
 
 ## Examples:
 
@@ -208,6 +208,7 @@ $ python song_gen.py "{Artist Name}" "{New Song Name}" "f"
 This will generate the new song in .txt file in `./new_songs/` and create a .mp3 for the song in `./song_files/`.
 
 ## TODOs:
+* Train models on sentiment-analyzed lyrics to generate happier/angstier lyrics
 * Generate song title from most frequent words
 * Add background music/"sing"-ify the mp3's
 * Play the mp3's
