@@ -203,7 +203,7 @@ $ python song_scrape.py "{Artist Name}"
 This will compile a .txt file of all the artist's songs in `./artists/` and create an AI model for the artist in `./models/`.
 To generate new song lyrics and .mp3 file, decide whether the voice should be `"f"` for female or `"m"` for male. Then (if `"f"` for example), run:
 ```bash
-$ python song_gen.py "{Artist Name}" "{New Song Name}" "f"
+$ python song_gen.py "{Artist Name}" "{New Song Name}" "{f|m}"
 ```
 This will generate the new song in .txt file in `./new_songs/` and create a .mp3 for the song in `./song_files/`.
 
