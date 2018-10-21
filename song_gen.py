@@ -23,6 +23,7 @@ for i in range(num_lines):
     if(i !=0 and i % 5 == 0):
         new_song+='\n'
 
+# TODO: most frequent word is title
 print(new_song)
 
 f_name = './new_songs/'+artist+'_'+song_name+'.txt'
@@ -50,3 +51,5 @@ with open(s_name, 'wb') as audio_file:
             'audio/wav',
             voice
         ).get_result().content)
+
+# TODO: incorporate background music library

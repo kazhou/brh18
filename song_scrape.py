@@ -12,7 +12,7 @@ artist = str(sys.argv[1]) #double quotes
 
 df = pandas.read_csv("./songlyrics/songdata.csv", encoding = 'unicode_escape')
 # len(df['artist'].unique()) #643
-print(df.columns) #['artist', 'song', 'link', 'text']
+# print(df.columns) #['artist', 'song', 'link', 'text']
 # print(df['artist'].unique())
 #'ABBA', 'Ariana Grande', 'Celine Dion', 'Fall Out Boy', 'Twenty One Pilots',
 # 'One Direction', 'High School Musical', 'Lady Gaga', 'Justin Bieber',
@@ -28,6 +28,7 @@ try: #artist
     fn = open(f_name,'w')
     fn.write(all_lyr)
     fn.close()
+    print("Lyrics compiled")
 except:
     print('Artist not found')
 
@@ -43,3 +44,5 @@ model_json = text_model.to_json()
 m_file = './models/'+artist+'.json'
 with open(m_file, 'w') as outfile:
     json.dump(model_json, outfile)
+
+print("Model created")
