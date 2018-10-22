@@ -199,7 +199,7 @@ To generate new song lyrics and .mp3 file, decide whether the voice should be `"
 ```bash
 $ python song_gen.py "{Artist Name}" "{New Song Name}" "{f|m}"
 ```
-This will generate the new song in .txt file in `./new_songs/` and create a .mp3 for the song in `./song_files/`.
+This will generate the new song in .txt file in `./new_lyrics/` and create a .mp3 for the song in `./mp3_files/`.
 
 ## TODOs:
 * Host all this on a website
